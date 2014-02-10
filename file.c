@@ -6,7 +6,7 @@
 FILE* write_image_header(struct fat12_bs *p_bs_fat12, uint8_t *bootcode, char* output_filename)
 {
 	FILE* output;
-	output = fopen(output_filename, "w");	/* return an error */
+	output = fopen(output_filename, "wb");	/* return an error */
 	
 	printf("--%x\r\n",output);
 	fwrite(p_bs_fat12, 1, 62, output);	/* SIZES BASED ON FAT 12 */
