@@ -6,15 +6,15 @@ org 7c3eh
 ;* LET'S GET FREAKY
 	mov al,64h
 	mov cx,0c82h
-lappy:
-	stosb
-	loop lappy
+;lappy:
+	rep stosb
+;	loop lappy
 ;
 	mov al,32h
 	mov cx,0780h
-lappy2:
-	stosb
-	loop lappy2
+;lappy2:
+	rep stosb
+;	loop lappy2
 
 ;***************
 ;* DECODER
